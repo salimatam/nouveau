@@ -1,0 +1,134 @@
+
+<?php echo $this->getContent() ?>
+
+<div align="right">
+    <?php echo $this->tag->linkTo(array("receipt/new", "Create receipt")) ?>
+</div>
+
+<?php echo $this->tag->form(array("receipt/search", "autocomplete" => "off")) ?>
+
+<div align="center">
+    <h1>Recherche de rsu</h1>
+</div>
+
+<table>
+    <tr>
+        <td align="right">
+            <label for="id">Code</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("id", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="receipt_number">Nombre de resu</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("receipt_number", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="date_collected">Date de colection</label>
+        </td>
+        <td align="south">
+            <?php echo $this->tag->textField(array("date_collected", "size" => 30)) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="amount_collected">Nombre de colection </label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("amount_collected", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="employee_id">Employee</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("employee_id", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="vendor_id">Code de vendeur</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("vendor_id", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="card_count">Nombre de carte</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("card_count", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="card_value">Valeur de carte</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("card_value", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="deposit_date">Date de depos</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("deposit_date", "size" => 30)) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="deposit_type">Type de depos </label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("deposit_type", "size" => 30)) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="deposit_reference">Reference de depot </label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("deposit_reference", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="deposit_phone_no">Numero de telephone du depositeur </label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("deposit_phone_no", "type" => "number")) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="created_date">Date de creation</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("created_date", "size" => 30)) ?>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">
+            <label for="modified_date">Date de modification</label>
+        </td>
+        <td align="left">
+            <?php echo $this->tag->textField(array("modified_date", "size" => 30)) ?>
+        </td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><?php echo $this->tag->submitButton("Recherche") ?></td>
+    </tr>
+</table>
+
+</form>
